@@ -1,0 +1,66 @@
+*tự nhớ các dạng thuộc tính property
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--không nên dùng cách này-->
+    <style>
+      .loi-chao {
+        color: blue;
+        font-weight: bold; /* Để làm chữ đậm */
+        text-transform: uppercase; /* Để viết hoa toàn bộ */
+      }
+
+      /*trạng thái mạy định*/
+      a:link {
+        color: blue;
+      }
+      /*đưa trỏ chuột đè lên lin để người dùng biết đó là link*/
+      a:hover {
+        color: yellow;
+      }
+      /*Trình duyệt nhớ rằng bạn đã từng bấm vào lin này rồi*/
+      a:visited {
+        color: brown;
+      }
+      /*cảm giác nút bị lúm xuống*/
+      a:active {
+        color: red;
+      }
+      .nut-bam {
+        display: inline-block;
+        padding: 20px;
+        border: 2px solid black; /* Kẻ khung để dễ thấy chuyển động */
+        text-decoration: none;
+        color: black;
+      }
+
+      /* Hiệu ứng lún xuống khi nhấn giữ */
+      .nut-bam:active {
+        transform: translateY(2px); /* Đẩy nút xuống 10px */
+      }
+
+      /*màu nền */
+      p {
+        backgroupnd-color: red;
+      }
+
+      h1 {
+        backgroup-color: #ff9966;
+      }
+
+      body {
+        background-image: url(../pictures/bgr.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello!</h1>
+    <!-- Selector -->
+    <p class="loi-chao">Chào mừng bạn đến với website của tôi!</p>
+    <a href="#" class="nut-bam">BẤM VÀ GIỮ CHUỘT</a>
+  </body>
+</html>
